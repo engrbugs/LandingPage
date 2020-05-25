@@ -8,9 +8,11 @@
     <link rel="icon" href="https://img.icons8.com/bubbles/50/000000/homer-simpson.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 </head>
 <body>
     <style>
+        
         * {
             box-sizing: border-box;
         }
@@ -29,10 +31,10 @@
         }
 
         .btn {
+            color: black;
             background-color: #ff9ff3;
             border-radius: 5px;
             box-shadow: 2px 2px 2px #f368e0;
-            color: whitesmoke;
             display: inline-block;
             padding: 12px 15px;
             text-decoration: none;
@@ -44,7 +46,7 @@
             box-shadow: 0px 0px 0px #f368e0;
             transform: translate(2px, 2px);
         }
-        .container {
+        .container, #features {
             max-width: 700px;
             display: flex;
             margin: 0 auto;
@@ -52,7 +54,7 @@
 
         nav {
             font-family: 'Nunito', sans-serif;
-            background-color: #ff9ff3;
+            background-color: #f368e0;
             display: flex;
             justify-content: center;
             padding: 15px;
@@ -74,8 +76,42 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            
         }
+
+        .feature {
+            background-color: #ff9ff3;
+            width: 30%;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+            margin: 30px 1.66%;
+            padding: 10px;
+            display: table-cell;
+        }
+
+        .feature h2 {
+            height: 48px;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        .feature h3 {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .feature i {
+            margin-top: 10px;
+            font-size: 33px;
+        }
+
+
+        .feature p {
+            font-size: 12px;
+            line-height: 24px;
+        }
+
+
     </style>
     <header id="header">
         <nav>
@@ -87,30 +123,32 @@
         <div class="container">
             <div class="header-left">
                 <h1>Gacha Life Ideas</h1>
-                <p>It really doesn’t matter what software you use, as long as you can use it well. If you have skills, a good plot for any sort of series or minimovie you’re making, and the dedication and heart, you’ll do great.<br><br>You can have the best editor and equipment in the world, but the best equipment will not give you the best skills automatically! You gotta work toward that..</p>
-                <a class="btn" href=#>Repo Link</a>
+                <p>It really doesn’t matter what software you use, as long as you can use it well. If you have skills, a good plot for any sort of series or mini movie you’re making, and the dedication and heart, you’ll do great.<br><br>You can have the best editor and equipment in the world, but the best equipment will not give you the best skills automatically! You gotta work toward that..</p>
+                <a class="btn" href="https://lunime.itch.io/gacha-life" target="_blank">Get Gacha Life</a>
             </div>
             <div class="header-right">
                 <img src="https://i.imgur.com/0WrhHDe.png"
                 alt="" />
             </div>
         </div>
-
     </header>
     <section id="features">
-        <div class="features">
+        <div class="feature">
+            <i class="fas fa-pager"></i>
             <h2>Starter Package</h2>
-            <h2>CAD $ 1.99</h2>
+            <h3>CAD $ 1.99</h3>
             <p>Pictures design, for your projects include a variety of creative printing materials such as corporate identities, brochures, magazines, books, posters, flyers, catalogues, packaging and other advertising materials.</p>
         </div>
-        <div class="features">
+        <div class="feature">
+            <i class="fas fa-mobile"></i>
             <h2>Premium Business</h2>
-            <h2>CAD $ 9.99</h2>
+            <h3>CAD $ 9.99</h3>
             <p>Pictures design, for your projects include a variety of creative printing materials such as corporate identities, brochures, magazines, books, posters, flyers, catalogues, packaging and other advertising materials.</p>
         </div>
-        <div class="features">
+        <div class="feature">
+            <i class="fab fa-accusoft"></i>
             <h2>Full Pro Studio</h2>
-            <h2>CAD $ 99.99</h2>
+            <h3>CAD $ 99.99</h3>
             <p>Pictures design, for your projects include a variety of creative printing materials such as corporate identities, brochures, magazines, books, posters, flyers, catalogues, packaging and other advertising materials.</p>
         </div>
     </section>
