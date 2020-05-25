@@ -11,7 +11,71 @@
 </head>
 <body>
     <style>
+        * {
+            box-sizing: border-box;
+        }
 
+        img {
+            max-width: 120%;
+            object-fit: cover;
+            object-position: 87% 0;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .btn {
+            background-color: #ff9ff3;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px #f368e0;
+            color: whitesmoke;
+            display: inline-block;
+            padding: 12px 15px;
+            text-decoration: none;
+            position: relative;
+            transition: all 0.1s ease;
+        }
+
+        .btn:active {
+            box-shadow: 0px 0px 0px #f368e0;
+            transform: translate(2px, 2px);
+        }
+        .container {
+            max-width: 700px;
+            display: flex;
+            margin: 0 auto;
+        }
+
+        nav {
+            font-family: 'Nunito', sans-serif;
+            background-color: #ff9ff3;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .nav-link {
+            color: whitesmoke;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .header-left {
+            width: 50%;
+            padding-right: 10px 25px;
+        }
+
+        .header-right {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
     </style>
     <header id="header">
         <nav>
@@ -21,19 +85,35 @@
             <a href="#pricing" class="nav-link">Pricing</a>
         </nav>
         <div class="container">
-            <div>
+            <div class="header-left">
                 <h1>Gacha Life Ideas</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint earum accusantium corrupti ullam iure debitis nostrum? Quia tempora nobis perferendis veniam, consequatur ducimus culpa doloremque dolor eveniet, ipsa ut.</p>
-                <a class="btn" href="https://lunime.itch.io/gacha-life">Repo Link</a>
+                <p>It really doesn’t matter what software you use, as long as you can use it well. If you have skills, a good plot for any sort of series or minimovie you’re making, and the dedication and heart, you’ll do great.<br><br>You can have the best editor and equipment in the world, but the best equipment will not give you the best skills automatically! You gotta work toward that..</p>
+                <a class="btn" href=#>Repo Link</a>
             </div>
-            <div>
-                <img src="https://i.dlpng.com/static/png/4654272-gacha-life-sticker-by-gachagalaxy1-kawaii-in-2019-life-girl-life-png-1024_1633_preview.png"
+            <div class="header-right">
+                <img src="https://i.imgur.com/0WrhHDe.png"
                 alt="" />
             </div>
         </div>
 
     </header>
-
+    <section id="features">
+        <div class="features">
+            <h2>Starter Package</h2>
+            <h2>CAD $ 1.99</h2>
+            <p>Pictures design, for your projects include a variety of creative printing materials such as corporate identities, brochures, magazines, books, posters, flyers, catalogues, packaging and other advertising materials.</p>
+        </div>
+        <div class="features">
+            <h2>Premium Business</h2>
+            <h2>CAD $ 9.99</h2>
+            <p>Pictures design, for your projects include a variety of creative printing materials such as corporate identities, brochures, magazines, books, posters, flyers, catalogues, packaging and other advertising materials.</p>
+        </div>
+        <div class="features">
+            <h2>Full Pro Studio</h2>
+            <h2>CAD $ 99.99</h2>
+            <p>Pictures design, for your projects include a variety of creative printing materials such as corporate identities, brochures, magazines, books, posters, flyers, catalogues, packaging and other advertising materials.</p>
+        </div>
+    </section>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
