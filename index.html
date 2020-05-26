@@ -17,6 +17,10 @@
             box-sizing: border-box;
         }
 
+        iframe {
+            margin-bottom: 30px;
+        }
+
         img {
             max-width: 120%;
             object-fit: cover;
@@ -28,6 +32,10 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             line-height: 1.5;
+        }
+
+        .bg-pink {
+            background-color: #ff9ff3;
         }
 
         .btn {
@@ -42,11 +50,27 @@
             transition: all 0.1s ease;
             font-family: 'Nunito', sans-serif;
             font-weight: 700;
+            font-size: 14px;
         }
 
         .btn:active {
             box-shadow: 0px 0px 0px #f368e0;
             transform: translate(2px, 2px);
+        }
+        
+        .btn-coral {
+            padding: 12px 20px;
+            border-radius: 5px;
+            box-shadow: none ;
+            border: none;
+            background-color: black;
+            color: whitesmoke;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+        .btn-coral:active {
+            box-shadow: 0px 0px 0px #f368e0;
+            transform: none;
         }
 
         h2 {
@@ -55,6 +79,10 @@
             display: flex;
             margin-right: auto;
             margin-left: auto;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            color: #222f3e;
         }
 
         .container, #features {
@@ -106,6 +134,40 @@
             text-align: center;
             justify-content: center;
             margin-top: 40px;
+            margin-bottom: 20px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            color: #222f3e;
+        }
+
+        form {
+            margin-bottom: 40px;
+        }
+        form .flex {
+            display: flex;
+        }
+
+        form input {
+            color: black;
+            border: 0;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 10px 25px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .h2-stay {
+            height: 48px;
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #222f3e;
         }
 
         .feature h2 {
@@ -135,15 +197,26 @@
             justify-content: center;
         }
 
+        footer {
+            background-color: black;
+            color:  #ff9ff3;
+            text-align: center;
+            padding: 10px;
+        }
 
+
+
+        footer .fa-heart {
+            color: #54a0ff;
+        }
 
     </style>
     <header id="header">
         <nav>
             <a href="#home" class="nav-link">About</a>
-            <a href="#features" class="nav-link">Features</a>
+            <a href="#features" class="nav-link">Price</a>
             <a href="#video" class="nav-link">Video</a>
-            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#join" class="nav-link">Sign-up</a>
         </nav>
         <div class="container">
             <div class="header-left">
@@ -157,7 +230,7 @@
             </div>
         </div>
     </header>
-    <h2>Video</h2>
+    <h2>Design Fee</h2>
     <section id="features">
         <div class="feature">
             <i class="fas fa-pager"></i>
@@ -179,11 +252,32 @@
         </div>
     </section>
     <section id="video">
-        <h2>Video</h2>
+        <h2>Video Inspiration</h2>
         <div class="container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/zzBvQoQrzHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
+
+    <section id="join" class="bg-pink">
+        <div class="container">
+            <form>
+                <h2 class="h2-stay">
+                    Stay up-to-day with what I am doing
+                </h2>
+                <div class="flex">
+                    <input type="email" placeholder="Enter your email..."/>
+                    <button class="btn-coral">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        Contact me <i class="fas fa-heart"></i> Coral28
+    </footer>
+
+
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     
