@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>freeCodeCamp Survey Form</title>
-    <link rel="icon" href="https://img.icons8.com/bubbles/50/000000/homer-simpson.png">
+    <title>Coral28 GLMV Design Studio</title>
+    <link rel="icon" href="https://img.icons8.com/doodle/48/000000/girl.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 </head>
 <body>
@@ -40,14 +40,26 @@
             text-decoration: none;
             position: relative;
             transition: all 0.1s ease;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
         }
 
         .btn:active {
             box-shadow: 0px 0px 0px #f368e0;
             transform: translate(2px, 2px);
         }
+
+        h2 {
+            max-width: 700px;
+            justify-content: center;
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
         .container, #features {
             max-width: 700px;
+            justify-content: center;
             display: flex;
             margin: 0 auto;
         }
@@ -78,15 +90,22 @@
             justify-content: center;
         }
 
+
         .feature {
             background-color: #ff9ff3;
             width: 30%;
             text-align: center;
             border-radius: 10px;
             box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
-            margin: 30px 1.66%;
+            margin: 0px 1.66%;
             padding: 10px;
-            display: table-cell;
+            
+        }
+
+        section h2 {
+            text-align: center;
+            justify-content: center;
+            margin-top: 40px;
         }
 
         .feature h2 {
@@ -101,7 +120,7 @@
         }
 
         .feature i {
-            margin-top: 10px;
+            margin-top: 15px;
             font-size: 33px;
         }
 
@@ -110,6 +129,12 @@
             font-size: 12px;
             line-height: 24px;
         }
+
+        #feature div div {
+            text-align: center;
+            justify-content: center;
+        }
+
 
 
     </style>
@@ -122,7 +147,7 @@
         </nav>
         <div class="container">
             <div class="header-left">
-                <h1>Gacha Life Ideas</h1>
+                <h1>Coral28 Gacha Life Music Video Ideas</h1>
                 <p>It really doesn’t matter what software you use, as long as you can use it well. If you have skills, a good plot for any sort of series or mini movie you’re making, and the dedication and heart, you’ll do great.<br><br>You can have the best editor and equipment in the world, but the best equipment will not give you the best skills automatically! You gotta work toward that..</p>
                 <a class="btn" href="https://lunime.itch.io/gacha-life" target="_blank">Get Gacha Life</a>
             </div>
@@ -132,6 +157,7 @@
             </div>
         </div>
     </header>
+    <h2>Video</h2>
     <section id="features">
         <div class="feature">
             <i class="fas fa-pager"></i>
@@ -152,7 +178,14 @@
             <p>Pictures design, for your projects include a variety of creative printing materials such as corporate identities, brochures, magazines, books, posters, flyers, catalogues, packaging and other advertising materials.</p>
         </div>
     </section>
+    <section id="video">
+        <h2>Video</h2>
+        <div class="container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zzBvQoQrzHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
 </body>
 </html>
