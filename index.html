@@ -21,6 +21,20 @@
             margin-bottom: 30px;
         }
 
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+        }
+
+        .videoWrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         img {
             max-width: 120%;
             object-fit: cover;
@@ -30,7 +44,7 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            margin: 0;
+            margin: 40px 0 0;
             line-height: 1.5;
         }
 
@@ -89,15 +103,21 @@
             max-width: 700px;
             justify-content: center;
             display: flex;
+            flex-wrap: wrap;
             margin: 0 auto;
         }
 
         nav {
             font-family: 'Nunito', sans-serif;
             background-color: #f368e0;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
             display: flex;
             justify-content: center;
             padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
         }
 
         .nav-link {
@@ -152,9 +172,10 @@
         }
         form .flex {
             display: flex;
+            flex-wrap: wrap;
         }
 
-        form input {
+        form input[type="email"] {
             color: black;
             border: 0;
             border-radius: 5px;
@@ -234,18 +255,60 @@
       }
 
 
- 
-
         footer .fa-heart {
             color: #54a0ff;
         }
 
+        @media (max-width: 480px) {
+            .header-left, .header-right {
+                width: 100%;
+            }
+
+            body {
+                margin: 68px 0 0;
+            }
+            .header-right {
+                order: 0;
+                text-align: center;
+                justify-content: center;
+            }
+            img {
+                max-width: 100%;
+           
+            }
+            .header-left {
+                order: 1;
+                padding-left: 20px;
+                text-align: center;
+            }
+
+            .header-left h1 {
+                font-size: 28px;
+                text-align: center;
+                justify-content: center;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+            }
+
+            .feature {
+                margin 10px;
+                width: 100%;
+            }
+
+            .flex .btn-coral {
+                width: 100%;
+                margin: 5px 10px;
+
+            }
+
+        }
+
     </style>
     <header id="header">
-        <nav>
-            <a href="#home" class="nav-link">About</a>
+        <nav id="nav-bar">
+            <a href="#header" class="nav-link">About</a>
             <a href="#features" class="nav-link">Price</a>
-            <a href="#video" class="nav-link">Video</a>
+            <a href="#video-section" class="nav-link">Video</a>
             <a href="#join" class="nav-link">Subscribe</a>
         </nav>
         <div class="container">
@@ -255,7 +318,7 @@
                 <a class="btn" href="https://lunime.itch.io/gacha-life" target="_blank">Get Gacha Life</a>
             </div>
             <div class="header-right">
-                <img src="https://i.imgur.com/0WrhHDe.png"
+                <img id="header-img" src="https://i.imgur.com/0WrhHDe.png"
                 alt="" />
             </div>
         </div>
@@ -281,22 +344,22 @@
             <p>Full Pro Studio difference comes from our deep understanding of business, marketing, process, corporate culture, and audience dynamics and in knowing how to relate all that to the viewer, to ultimately help your video and your business get the results you want.</p>
         </div>
     </section>
-    <section id="video">
+    <section id="video-section">
         <h2>Inspiration Video</h2>
         <div class="container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zzBvQoQrzHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/zzBvQoQrzHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 
     <section id="join" class="bg-pink">
         <div class="container">
-            <form>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <h2 class="h2-stay">
                     Inquire and Subscribe to Stay up-to-day
                 </h2>
                 <div class="flex">
-                    <input type="email" placeholder="Enter your email..."/>
-                    <button class="btn-coral">Submit</button>
+                    <input id="email" type="email" name="email" placeholder="Enter your email..."/>
+                    <input id="submit" class="btn-coral" type="submit" value="Submit" />
                 </div>
             </form>
         </div>
